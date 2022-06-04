@@ -9,7 +9,7 @@ Original file is located at
 **ReadMe:**
 
 1. Fitstly, you should get your personal API though Alpha_Vantage https://www.alphavantage.co/support/#api-key
-2. Intall the library alpha_vantage
+2. Intall the library alpha_vantage (pip install alpha_vantage)
 3. Connected to 'APPLE Company'
 """
 
