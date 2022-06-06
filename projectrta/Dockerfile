@@ -16,12 +16,6 @@ WORKDIR /app/
 
 # Copy requirements.txt outside the container
 # to /app/ inside the container
-
-
-
-RUN apt update && \
-    apt install --no-install-recommends -y build-essential gcc && \
-    apt clean && rm -rf /var/lib/apt/lists/*
 COPY requirements.txt /app/
 
 RUN pip3 install --no-cache-dir -r ./requirements.txt
@@ -31,9 +25,9 @@ RUN pip3 install --no-cache-dir -r ./requirements.txt
 # to /app/ inside the container
 COPY app.py __init__.py /app/
 
-# Copy model.pkl outside the container
+# Copy templates folder outside the container
 # to /app/ inside the container
-
+ADD templates /app/templates
 
 # Expose the container's port 3333
 EXPOSE 3333

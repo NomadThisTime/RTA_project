@@ -1,16 +1,12 @@
-import flask
 import base64
-from io import BytesIO
-from matplotlib.figure import Figure
-import matplotlib.pyplot as plt
-import matplotlib
-from flask import Flask, request, url_for, redirect, render_template
-import pandas as pd
-from matplotlib import pyplot as plt
-from alpha_vantage.timeseries import TimeSeries
 import numpy as np
 import plotly
 import json
+import matplotlib
+from io import BytesIO
+from flask import Flask, render_template
+from matplotlib import pyplot as plt
+from alpha_vantage.timeseries import TimeSeries
 import plotly.graph_objects as go
 
 from datetime import datetime

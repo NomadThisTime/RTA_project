@@ -1,3 +1,7 @@
 numpy
 scikit-learn
 Flask
+plotly
+matplotlib
+alpha_vantage
+pandas
