@@ -30,7 +30,7 @@ COPY app.py __init__.py /app/
 ADD templates /app/templates
 
 # Expose the container's port 3333
-EXPOSE 3333
+EXPOSE 5000
 
 # When the container starts, run this
 ENTRYPOINT python ./app.py
