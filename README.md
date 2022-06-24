@@ -1,3 +1,3 @@
 # RTA_project
 
-Shared space for the project
+Shared space for real-time analytics project
